@@ -1,0 +1,93 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+   {
+      "name": "Decoração",
+      "description": "Escolha a decoração para sua festa, e nós a montamos.",
+      "price": 1400,
+      "image": "https://images.unsplash.com/photo-1478146059778-26028b07395a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=892&q=80"
+    }
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/65a92e0d86ef4ef2f2b6cf94
+
+###
+DELETE http://localhost:3000/api/services/65a92e0d86ef4ef2f2b6cf94
+
+###
+PUT  http://localhost:3000/api/services/65aa6c62f84f213912f50daf
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 1500,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFydHl8ZW58MHx8MHx8fDA%3D"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Kaline",
+    "description": "Uma feta de aniversário",
+    "budget": 9000,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFydHl8ZW58MHx8MHx8fDA%3D",
+    "services": [
+        {
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 3000,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFydHl8ZW58MHx8MHx8fDA%3D"   
+       },
+     {
+    "name": "Algum serviço 2",
+    "description": "Alguma descrição",
+    "price": 1600,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFydHl8ZW58MHx8MHx8fDA%3D"   
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/65aa75a2445639dbb7b219bb
+
+###
+DELETE  http://localhost:3000/api/parties/65aa75a2445639dbb7b219bb
+
+###
+PUT  http://localhost:3000/api/parties/65aa75a2445639dbb7b219bb
+
+###
+PUT http://localhost:3000/api/parties/65aa78ec0a4fb16b2a392728
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Kaline",
+    "description": "Uma feta de aniversário",
+    "budget": 10000,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFydHl8ZW58MHx8MHx8fDA%3D",
+    "services": [
+        {
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 3000,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFydHl8ZW58MHx8MHx8fDA%3D"   
+       },
+     {
+    "name": "Algum serviço 2",
+    "description": "Alguma descrição",
+    "price": 1600,
+    "image": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFydHl8ZW58MHx8MHx8fDA%3D"   
+        }
+    ]
+}
